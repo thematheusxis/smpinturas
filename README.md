@@ -24,7 +24,7 @@ Este repositório é destinado apenas para fins demonstrativos. Caso pretenda co
 
 Licença
 
-A licença utilizada para este código-fonte  é www.vecteezy.com
+A licença utilizada para este código-fonte  é de autoria @thematheusx
 
 Contato
 
