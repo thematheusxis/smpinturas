@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color: rgb(0, 0, 0);
+    --bg-url: url(assets/background.jpg);
+    --highlight-color:rgba(0, 0, 0, 0.1);
+  
+}
+
+
+
+
+body{
+  background: url(assets/background.jpg) no-repeat top center/cover;
+    height: 100vh;
+   
+}
+body *{ 
+    font-family: "Inter", sans-serif;
+    color: var(--text-color)
+
+}
+#container {
+    width: 100%;
+    max-width: 588px;
+    margin: auto;
+    padding-top: 56px;
+    padding: 0px 24px;
+}
+/* PROFILE */
+#profile{
+    text-align: center;
+    padding: 24px;
+}
+#profile img {
+    width: 112px;}
+#profile p{
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+}
+/*switch*/
+#switch{
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+}
+
+
+#switch button{
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url) no-repeat center ;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%) ;
+    animation: slide-back 0.2s;
+
+}
+#switch button:hover{
+    outline: 8px solid var(--highlight-color);
+}
+
+#switch span{
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+
+}
+/*links*/
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
+
+}
+ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px ;
+    background-color: rgba(255, 255, 225, 0.1);
+    border: 1px solid var(--stroke-color);
+    border-radius: 8px;
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+ul li a:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: var(--highlight-color);
+    border: 1.5px solid rgba(255, 255, 225, 0.5);
+    
+}
+/* social links */
+#social-links{
+ display: flex;
+ justify-content: center;
+ padding: 24px 0;
+ font-size: 24px;
+}
+#social-links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+#social-links a:hover{
+    background-color: var(--highlight-color);
+    padding: 16px;
+    
+}
+footer{
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+}
