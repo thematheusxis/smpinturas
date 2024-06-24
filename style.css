@@ -6,8 +6,8 @@
 }
 
 :root{
-    --text-color: rgb(0, 0, 0);
-    --bg-url: url(assets/background.jpg);
+    --text-color: rgb(255, 255, 255);
+    --bg-url: url(assets/background-mobile.jpg) no-repeat top center/cover;
     --highlight-color:rgba(0, 0, 0, 0.1);
   
 }
@@ -16,7 +16,7 @@
 
 
 body{
-  background: url(assets/background.jpg) no-repeat top center/cover;
+  background: var(--bg-url);
     height: 100vh;
    
 }
@@ -134,4 +134,9 @@ footer{
     padding: 24px 0;
     text-align: center;
     font-size: 14px;
+}
+@media (min-width: 700px){
+    :root{
+        --bg-url: url(assets/background-desktop.jpg);
+    }
 }
